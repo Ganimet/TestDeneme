@@ -18,4 +18,11 @@ public abstract class BasePage<E>{
 		this.wait = new WebDriverWait(driver, DEFAULT_WAIT, 1000);
 	}
 
+	public void waitSeconds(int seconds){
+		try {
+			Thread.sleep(seconds * 1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
 }
