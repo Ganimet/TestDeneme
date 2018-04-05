@@ -16,6 +16,9 @@ public abstract class BasePage<E>{
 	public BasePage(AppiumDriver<MobileElement> driver) {
 		this.driver = driver;
 		this.wait = new WebDriverWait(driver, DEFAULT_WAIT, 1000);
+		
+		System.out.println("helloooo");
+		System.out.println("deneme commit");
 	}
 
 	public void waitSeconds(int seconds){
